@@ -142,7 +142,7 @@ The business requirements focus on identifying pollution hotspots, trends in lit
 - Data Quality: The quality and consistency of data across different surveys and years may vary, which could affect the reliability of the analysis. Any gaps in the data will be addressed through interpolation or estimation where necessary.
 
 ### Stakeholders
-#### Environmental agencies: 
+#### Environmental agencies (Primary Stakeholder)
 Organisations focused on monitoring, protecting, and managing the environment. They use data to track pollution, enforce regulations, and guide conservation efforts to protect natural resources and ecosystems.
 
 - **Data Requirements:**
@@ -159,7 +159,10 @@ Organisations focused on monitoring, protecting, and managing the environment. T
     - Reduce marine pollution.
     - Support environmental regulations.
 
-
+### Intended Audience
+- **Environmental organisations & NGOs** – Use findings to advocate for stronger policies  
+- **Students & educators** – Benefit from visualisations through learning and awareness  
+- **Public & media** – Understand marine pollution trends through accessible insights  
 
 ## Hypotheses and Validation
 ### Hypothesis 1: Plastic is the highest category of litter  
@@ -230,7 +233,7 @@ Organisations focused on monitoring, protecting, and managing the environment. T
   - **For 2012-2015:** Fishing effort data can be confidently compared with marine debris data from the same period.  
   - **For 1992-2011:** While direct comparison with fishing data is not possible, debris trends over time can still be analysed. It is possible to hypothesise that earlier fishing efforts might have had similar patterns to the 2012-2015 period, depending on historical context.  
 
-
+---
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
