@@ -1,5 +1,5 @@
 # North East Atlantic Seafloor Litter Analysis
-![Image of a deceased fish trapped inside a plastic glove.](images/01_fish_in_plastic.jpeg)
+![Image of a deceased fish trapped inside a plastic glove.](images/01_debris_in_sea.gif)
 ## Introduction
 ### What is marine litter?
 Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean [[1]](#1). The definition encompasses debris such as plastic, metals, rubber and woods, among others.
@@ -241,18 +241,19 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
+##TODO: ADD TABLE W/ BIZ REQ, RATIONALE AND MAPPED VISUALISATION AND SECTION
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
 
 ## Generative AI
-please view the [GEN_AI.md](GEN_AI.md) file.
+Please view the [GEN_AI.md](GEN_AI.md) file.
+
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+Please view the [ETHICS.md](ETHICS.md) file.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
