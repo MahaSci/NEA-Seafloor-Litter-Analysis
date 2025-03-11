@@ -1,5 +1,5 @@
 # North East Atlantic Seafloor Litter Analysis
-![Image of a deceased fish trapped inside a plastic glove.](fish_in_plastic.jpeg)
+![Image of a deceased fish trapped inside a plastic glove.](images\01_fish_in_plastic.jpeg)
 ## Introduction
 ### What is marine litter?
 Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean [[1]](#1). The definition encompasses debris such as plastic, metals, rubber and woods, among others.
