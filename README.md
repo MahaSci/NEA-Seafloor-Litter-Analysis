@@ -1,21 +1,21 @@
 # North East Atlantic Seafloor Litter Analysis
-
+![Image of a deceased fish trapped inside a plastic glove.](fish_in_plastic.jpeg)
 ## Introduction
 ### What is marine litter?
-Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean. The definition encompasses debris such as plastic, metals, rubber and woods, among others.
+Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean [[1]](#1). The definition encompasses debris such as plastic, metals, rubber and woods, among others.
 
 ### What issues arise due to marine litter?
 
-The accumulation of non-organic waste in the seas leads to the pollution of our waters. Marine pollution is considered to be one of many critical global issues that not only poses a threat to our ecosystems, but also is detrimental to our human existence. For many people across the globe, the sea serves as a means of sustenance and a source of livelihood. Furthermore, the seas absorb carbon emissions, produce part of the oxygen we breathe, and intake excess heat from the climate system, as reported by the United Nations. As marine pollution continues to increase, it jeopardises the sea's ability to perform these essential functions.
+The accumulation of non-organic waste in the seas leads to the pollution of our waters. Marine pollution is considered to be one of many critical global issues that not only poses a threat to our ecosystems, but also is detrimental to our human existence. For many people across the globe, the sea serves as a means of sustenance and a source of livelihood. Furthermore, the seas absorb carbon emissions, produce part of the oxygen we breathe, and intake excess heat from the climate system, as reported by the United Nations [[2]](#2). As marine pollution continues to increase, it jeopardises the sea's ability to perform these essential functions.
 
->According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** 
+>According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** [[3]](#3)
 
 ## Project Goal
 This project aims to provide an in depth analysis into the distribution and composition of marine litter in the North East Atlantic region. Moreover, it serves to identify trends and potential strategies that can be enforced to mitigate marine pollution. 
 
 ## Dataset Content
 
-The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2014. 
+The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2014. [[4]](#4)
 
 These surveys include:
 
@@ -107,15 +107,55 @@ The dataset includes a wide range of attributes related to seafloor litter, with
 |-----------------------|----------------------------|
 | `other.misc`          | Miscellaneous items        |
 
-### Additional Data:
+
+### Counts, Trawl Distance & Wing Spread
 - **Total Litter**: Total amount of litter identified during the survey
 - **Distance Trawled**: The distance covered during the trawling process
 - **Wing Spread**: The spread of the trawl during data collection
 
 This rich dataset provides a comprehensive view of marine pollution over an extensive period, offering insights into the types, distribution, and concentration of marine litter across the North East Atlantic.
 
+- **Definition**: Public data - no limitations to public access.  
+- **Conditions applying to re-use**: Public data - no limitations to reuse.
+
+### Additional Data:
+- In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and  its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
 
 ## Business Requirements
+The business requirements focus on identifying pollution hotspots, trends in litter composition, and evaluating the environmental impact of marine debris.
+
+### Project Objectives
+- Classify pollution: Categorise marine litter by type (plastics, metals, etc.).
+- Analyse composition trends: Track temporal changes in litter composition over time.
+- Identify hotspots: Locate pollution concentrations for targeted cleanup campaigns.
+- Assess environmental impact: Evaluate the effects on marine biodiversity
+- Public awareness: Present findings in an accessible and compelling format for non-technical audiences and stakeholders.
+
+### Project Constraints
+- Geographical Limitation: The analysis is limited to the North East Atlantic region, as per the available Cefas survey data. Data from other regions or outside the Cefas dataset will not be included, with the sole exception of Global Fishing Watch data for additional context.
+
+- Temporal Scope: The dataset spans from 1992 to 2014, and any changes to the scope of this period will require additional data sources.
+
+- Data Quality: The quality and consistency of data across different surveys and years may vary, which could affect the reliability of the analysis. Any gaps in the data will be addressed through interpolation or estimation where necessary.
+
+### Stakeholders
+#### Environmental agencies: 
+Organisations focused on monitoring, protecting, and managing the environment. They use data to track pollution, enforce regulations, and guide conservation efforts to protect natural resources and ecosystems.
+
+- **Data Requirements:**
+    - Visualise litter trends, hotspots, and environmental impact.
+    - Monitor pollution levels over time.
+    - Impact analysis on marine life.
+
+- **Dashboard Features:**
+    - Trend charts for litter types over time.
+    - Heatmaps to identify pollution hotspots.
+
+- **Desired Outcomes:**
+    - Improve conservation efforts.
+    - Reduce marine pollution.
+    - Support environmental regulations.
+
 
 
 ## Hypothesis and how to validate?
@@ -134,6 +174,8 @@ This rich dataset provides a comprehensive view of marine pollution over an exte
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
+## Ethical considerations
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
@@ -175,14 +217,20 @@ This rich dataset provides a comprehensive view of marine pollution over an exte
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+### References 
+<a id="1">[1]</a> 
+*   Wikipedia Contributors. (2025, January 23). Marine debris. In *Wikipedia, The Free Encyclopedia*. 
+Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marine_debris&oldid=1271267612](https://en.wikipedia.org/w/index.php?title=Marine_debris&oldid=1271267612)
 
-### Content 
+<a id="2">[2]</a>
+*   United Nations. (2025). 5 Reasons You Should Care About Our Ocean. Retrieved March 11, 2025, from [https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean](https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean)
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+<a id="3">[3]</a>
+*   UNESCO. (2025). Plastic Pollution in the Ocean. Retrieved March 11, 2025, from [https://oceanliteracy.unesco.org/plastic-pollution-ocean/](https://oceanliteracy.unesco.org/plastic-pollution-ocean/)
+
+<a id="5">[5]</a> 
+*   Global Fishing Watch. (2025). Retrieved from [https://globalfishingwatch.org/](https://globalfishingwatch.org/)
+
 
 ### Media
 
