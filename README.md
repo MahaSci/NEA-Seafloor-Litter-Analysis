@@ -1,5 +1,5 @@
 # North East Atlantic Seafloor Litter Analysis
-![Image of a deceased fish trapped inside a plastic glove.](images\01_fish_in_plastic.jpeg)
+![Image of a deceased fish trapped inside a plastic glove.](images/01_fish_in_plastic.jpeg)
 ## Introduction
 ### What is marine litter?
 Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean [[1]](#1). The definition encompasses debris such as plastic, metals, rubber and woods, among others.
@@ -24,6 +24,12 @@ These surveys include:
 3. **Clean Seas Environment Monitoring Programme (CSEMP)**
 
 The dataset follows the classification system defined by Galgani et al. (2013), which provides a comprehensive framework for marine litter monitoring in European seas.
+
+**Definition:**  
+Public data – no limitations to public access.  
+
+**Conditions for Reuse:**  
+Public data – no limitations on reuse.  
 
 The dataset includes a wide range of attributes related to seafloor litter, with data gathered from multiple research vessel (RV) cruises over a 22-year period. The data encompasses both the collection of different types of litter and the geographical and temporal details associated with each haul or station.
 
@@ -115,9 +121,6 @@ The dataset includes a wide range of attributes related to seafloor litter, with
 
 This rich dataset provides a comprehensive view of marine pollution over an extensive period, offering insights into the types, distribution, and concentration of marine litter across the North East Atlantic.
 
-- **Definition**: Public data - no limitations to public access.  
-- **Conditions applying to re-use**: Public data - no limitations to reuse.
-
 ### Additional Data:
 - In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and  its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
 
@@ -158,8 +161,75 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 
 
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+## Hypotheses and Validation
+### Hypothesis 1: Plastic is the highest category of litter  
+- **Alternative Hypothesis (H₁):** Plastic is the highest category of litter.  
+- **Null Hypothesis (H₀):** The plastic category is not the highest category of litter.  
+- **Rationale:**  
+  Plastic waste often makes up a large portion of marine pollution, based on existing studies and real-world observations. The hypothesis is that plastic is the dominant form of waste in the dataset.  
+- **Exploratory Data Analysis (EDA) Approach:**  
+  - Polar chart  
+  - Histogram of categories over time  
+  - Line chart comparing plastic vs. other materials  
+- **Validation Method:**  
+  - Chi-Square test to compare observed vs. expected category distributions  
+
+---
+
+### Hypothesis 2: Litter accumulation varies significantly between the Celtic and Greater North Sea areas  
+- **Alternative Hypothesis (H₁):** Litter accumulation varies significantly between these areas.  
+- **Null Hypothesis (H₀):** There is no significant difference in litter accumulation between these areas.  
+- **Rationale:**  
+  Investigating whether litter accumulation differs between these two survey areas can help understand regional differences in pollution and support targeted intervention strategies.  
+- **EDA Approach:**  
+  - Grouped bar plots comparing `totallitter` between the Celtic and Greater North Sea areas  
+  - Boxplots to compare the distribution of litter  
+- **Validation Method:**  
+  - Check if data is normally distributed using:  
+    - Plot & Shapiro-Wilk test for normality  
+  - If normal: **T-test**  
+  - If not normal: **Mann-Whitney U test**  
+
+---
+
+### Hypothesis 3: There is a positive correlation between the distance of the haul and the total amount of litter found  
+- **Alternative Hypothesis (H₁):** There is a positive correlation between the distance of the haul and the total amount of litter found.  
+- **Null Hypothesis (H₀):** There is no correlation between the distance of the haul and the total amount of litter found.  
+- **Rationale:**  
+  Larger distances may lead to more litter being collected.  
+- **EDA Approach:**  
+  - Scatterplot: Distance vs. Total Litter  
+- **Validation Method:**  
+  - Pearson Correlation Coefficient  
+  - T-test for statistical significance  
+
+---
+
+### Hypothesis 4: There is a seasonal variation in the types of litter found (e.g., more plastic in summer months)  
+- **Alternative Hypothesis (H₁):** There is a seasonal variation in the types of litter found.  
+- **Null Hypothesis (H₀):** There is no seasonal variation in the types of litter found across different months of the year.  
+- **Rationale:**  
+  Seasonal variations in weather, human activity, and maritime traffic could influence the types of litter found.  
+- **EDA Approach:**  
+  - Bar chart of total litter across months, then grouped into seasons  
+  - Breakdown of litter categories by season  
+- **Validation Method:**  
+  - **ANOVA** test to check for significant seasonal variation  
+
+---
+
+### Hypothesis 5: Coastal areas with higher fishing activity have higher amounts of fishing-related debris (2012-2015)  
+- **Alternative Hypothesis (H₁):** Coastal areas with higher fishing activity have higher amounts of fishing-related debris.  
+- **Null Hypothesis (H₀):** Coastal areas with higher fishing activity do not have higher amounts of fishing-related debris.  
+- **Rationale:**  
+  The fishing industry contributes significantly to marine debris, especially plastics and fishing gear (nets, ropes, etc.). This hypothesis tests whether higher fishing activity correlates with more debris.  
+- **EDA Approach:**  
+  - Heatmap of only fishing-related goods  
+  - Overlay with fishing activity data  
+- **Validation Method:**  
+  - **For 2012-2015:** Fishing effort data can be confidently compared with marine debris data from the same period.  
+  - **For 1992-2011:** While direct comparison with fishing data is not possible, debris trends over time can still be analysed. It is possible to hypothesise that earlier fishing efforts might have had similar patterns to the 2012-2015 period, depending on historical context.  
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -174,8 +244,6 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
-
-## Ethical considerations
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
