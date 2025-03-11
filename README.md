@@ -1,16 +1,121 @@
-# Project XYZ
+# North East Atlantic Seafloor Litter Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+## Introduction
+### What is marine litter?
+Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean. The definition encompasses debris such as plastic, metals, rubber and woods, among others.
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### What issues arise due to marine litter?
 
+The accumulation of non-organic waste in the seas leads to the pollution of our waters. Marine pollution is considered to be one of many critical global issues that not only poses a threat to our ecosystems, but also is detrimental to our human existence. For many people across the globe, the sea serves as a means of sustenance and a source of livelihood. Furthermore, the seas absorb carbon emissions, produce part of the oxygen we breathe, and intake excess heat from the climate system, as reported by the United Nations. As marine pollution continues to increase, it jeopardises the sea's ability to perform these essential functions.
+
+>According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** 
+
+## Project Goal
+This project aims to provide an in depth analysis into the distribution and composition of marine litter in the North East Atlantic region. Moreover, it serves to identify trends and potential strategies that can be enforced to mitigate marine pollution. 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+
+The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2014. 
+
+These surveys include:
+
+1. **International Bottom Trawl Survey (IBTS)**
+2. **ICES Ground Fish Surveys (Q4SW)**
+3. **Clean Seas Environment Monitoring Programme (CSEMP)**
+
+The dataset follows the classification system defined by Galgani et al. (2013), which provides a comprehensive framework for marine litter monitoring in European seas.
+
+The dataset includes a wide range of attributes related to seafloor litter, with data gathered from multiple research vessel (RV) cruises over a 22-year period. The data encompasses both the collection of different types of litter and the geographical and temporal details associated with each haul or station.
+
+### Key Attributes of the Dataset:
+- **Year**: Year of data collection
+- **Survey Name**: The name of the survey (IBTS, Q4SW, CSEMP)
+- **Cruise Name**: Name of the RV cruise
+- **Area**: Geographical area surveyed (Greater North Sea/Celtic Sea)
+- **Station Number**: Identification number for the station
+- **Latitude and Longitude**: Coordinates of the haul and shot locations
+- **Date**: Date of the data collection
+
+### Types of Litter Categories:
+
+#### **Plastic Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `bottle`              | Plastic bottles            |
+| `sheet`               | Plastic sheeting           |
+| `bag`                 | Plastic bags               |
+| `caps`                | Plastic bottle caps        |
+| `fishline.mono`       | Fishing line (monofilament)|
+| `fishline.tang`       | Entangled fishing line     |
+| `synthrope`           | Synthetic ropes            |
+| `fishnet`             | Fishing nets               |
+| `cabletie`            | Cable ties                 |
+| `strap`               | Strapping bands            |
+| `crates`              | Plastic crates             |
+| `nappies`             | Plastic nappies            |
+| `santowels`           | Sanitary towels            |
+| `other.plas`          | Other plastic items        |
+
+#### **Metal Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `cansfood`            | Metal food cans            |
+| `cansdrink`           | Metal drink cans           |
+| `fishmetal`           | Metal items related to fishing |
+| `drums`               | Metal drums                |
+| `appliance`           | Metal appliances           |
+| `carparts`            | Car parts                  |
+| `cables`              | Metal cables               |
+| `other.metal`         | Other metal debris         |
+
+#### **Rubber Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `wellies`             | Rubber boots               |
+| `balloon`             | Rubber balloons            |
+| `bobbins`             | Rubber bobbins             |
+| `tyre`                | Car tyres                  |
+| `gloves`              | Rubber gloves              |
+| `other.rub`           | Other rubber items         |
+
+#### **Glass Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `jars`                | Glass jars                 |
+| `bottles`             | Glass bottles              |
+| `pieces`              | Pieces of glass            |
+| `other.glass`         | Other glass items          |
+
+#### **Wood Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `woodnat`             | Natural wood               |
+| `woodproc`            | Processed wood             |
+| `rope`                | Natural rope               |
+| `paper`               | Paper                      |
+| `pallets`             | Wooden pallets             |
+| `other.wood`          | Other wood items           |
+
+#### **Clothing and Fabrics**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `clothing`            | Clothing                   |
+| `shoes`               | Shoes                      |
+
+#### **Miscellaneous Litter**:
+| Item                  | Description                |
+|-----------------------|----------------------------|
+| `other.misc`          | Miscellaneous items        |
+
+### Additional Data:
+- **Total Litter**: Total amount of litter identified during the survey
+- **Distance Trawled**: The distance covered during the trawling process
+- **Wing Spread**: The spread of the trawl during data collection
+
+This rich dataset provides a comprehensive view of marine pollution over an extensive period, offering insights into the types, distribution, and concentration of marine litter across the North East Atlantic.
 
 
 ## Business Requirements
-* Describe your business requirements
 
 
 ## Hypothesis and how to validate?
