@@ -43,9 +43,21 @@ Generative AI tools, including OpenAI's GPT models and GitHub Copilot were used 
 
     AI output:
 
-    <img src="images/03_hypotheses_AI.png" alt="AI Output" width="70%">
+    <img src="images/03_hypotheses_AI.png" alt="AI Output" width="70%"><br>
 
+- For the templates of this file and the ethics file, I used ChatGPT to generate templates for me to fill in.
 
+     Prompt used:
+
+        Please generate me documentation templates, in markdown, for generative AI and ethics.
+
+        Gen ai: intro, applications> documentation, coding help, business req. , data insights, design thinking, how i made sure outputs were correct, pros and cons of AI
+
+        Ethics: data+privacy, bias, legal issues, reflection
+
+    AI Output:
+
+    <img src="images/04_md_templates_AI.png" alt="AI Output" width="70%">
 
 
 ### Design Thinking
