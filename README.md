@@ -1,6 +1,30 @@
 # North East Atlantic Seafloor Litter Analysis
 ![Image of a deceased fish trapped inside a plastic glove.](images/01_debris_in_sea.gif)
-## Introduction
+## 📖 Table of Contents  
+| **Section**                             | **Description**                          |
+|-----------------------------------------|------------------------------------------|
+| 🎯 [Introduction & Project Overview](#introduction-project-overview)  | Overview of the project and objectives.  |
+| 📊 [Dataset](#dataset)                  | Information about the dataset used.      |
+| 💼 [Business Requirements](#business-requirements) | Key business requirements for the project. |
+| 🔎 [Hypotheses and Validation](#hypotheses-and-validation) | Hypotheses being tested and their validation. |
+| 🧭 [Project Plan & Methodology](#project-plan-methodology) | Detailed methodology and steps for analysis. |
+| 📈 [Data Analysis & Visualisation](#data-analysis-visualisation) | Approaches for data analysis and visualisation. |
+| 🖥️ [Dashboard Design & Development](#dashboard-design-development) | Design and development of the dashboard. |
+| 🧩 [Challenges, Solutions & Future Developments](#challenges-solutions-future-developments) | Challenges faced, solutions provided, and future directions. |
+| 🐞 [Unfixed Bugs](#unfixed-bugs) | List of any unresolved bugs or issues. |
+| 🤖 [Generative AI & Ethical Considerations](#generative-ai-ethical-considerations) | Ethical considerations and use of generative AI. |
+| 🎖️ [Credits](#credits)                     | Acknowledgments and credits.             |
+| 🔗 [References](#references)               | List of references used in the project.  |
+
+
+
+
+
+## <a id="introduction-project-overview"></a> 🎯 Introduction & Project Overview
+
+### Project Goal
+This project aims to provide an in depth analysis into the distribution and composition of marine litter in the North East Atlantic region. Moreover, it serves to identify trends and potential strategies that can be enforced to mitigate marine pollution. 
+
 ### What is marine litter?
 Marine litter is defined as non-organic waste that has been deliberately or accidentally released into the sea or ocean [[1]](#1). The definition encompasses debris such as plastic, metals, rubber and woods, among others.
 
@@ -10,10 +34,8 @@ The accumulation of non-organic waste in the seas leads to the pollution of our 
 
 >According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** [[3]](#3)
 
-## Project Goal
-This project aims to provide an in depth analysis into the distribution and composition of marine litter in the North East Atlantic region. Moreover, it serves to identify trends and potential strategies that can be enforced to mitigate marine pollution. 
 
-## Dataset Content
+## <a id="dataset"></a>📊 Dataset
 
 The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2014. [[4]](#4)
 
@@ -124,7 +146,7 @@ This rich dataset provides a comprehensive view of marine pollution over an exte
 ### Additional Data:
 - In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and  its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
 
-## Business Requirements
+## <a id="business-requirements"></a>💼 Business Requirements
 The business requirements focus on identifying pollution hotspots, trends in litter composition, and evaluating the environmental impact of marine debris.
 
 ### Project Objectives
@@ -141,7 +163,7 @@ The business requirements focus on identifying pollution hotspots, trends in lit
 
 - Data Quality: The quality and consistency of data across different surveys and years may vary, which could affect the reliability of the analysis. Any gaps in the data will be addressed through interpolation or estimation where necessary.
 
-### Stakeholders
+### Project Stakeholders
 #### Environmental agencies (Primary Stakeholder)
 Organisations focused on monitoring, protecting, and managing the environment. They use data to track pollution, enforce regulations, and guide conservation efforts to protect natural resources and ecosystems.
 
@@ -159,12 +181,12 @@ Organisations focused on monitoring, protecting, and managing the environment. T
     - Reduce marine pollution.
     - Support environmental regulations.
 
-### Intended Audience
+### Project Intended Audiences
 - **Environmental organisations & NGOs** – Use findings to advocate for stronger policies  
 - **Students & educators** – Benefit from visualisations through learning and awareness  
 - **Public & media** – Understand marine pollution trends through accessible insights  
 
-## Hypotheses and Validation
+## <a id="hypotheses-and-validation"></a>🔎 Hypotheses and Validation
 ### Hypothesis 1: Plastic is the highest category of litter  
 - **Alternative Hypothesis (H₁):** Plastic is the highest category of litter.  
 - **Null Hypothesis (H₀):** The plastic category is not the highest category of litter.  
@@ -234,51 +256,59 @@ Organisations focused on monitoring, protecting, and managing the environment. T
   - **For 1992-2011:** While direct comparison with fishing data is not possible, debris trends over time can still be analysed. It is possible to hypothesise that earlier fishing efforts might have had similar patterns to the 2012-2015 period, depending on historical context.  
 
 ---
-## Project Plan
+## <a id="project-plan-methodology"></a>🧭 Project Plan & Methodology
+
+### High-Level Steps:
 * Outline the high-level steps taken for the analysis.
+### Data Cleaning & Preprocessing
+- **Data Import & Inspection:** Loaded `01_RAW_NEA-Seafloor-Litter.csv`, checked structure, and identified issues.
+- **Handling Missing Values:** Applied imputation, removal, or "unknown" categorisation.
+- **Standardisation & Formatting:** Reformatted dates, verified categorical consistency.
+- **Filtering & Structuring:** Removed redundant records and prepared data for analysis.
+- **Feature Engineering:** Created derived variables and normalised where necessary.
+- **Output:** Saved cleaned data as `02_PROCESSED_NEA-Seafloor-Litter.csv`.
+
+### Data Management:
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
+
+### Methodology Justification:
 * Why did you choose the research methodologies you used?
 
-## The rationale to map the business requirements to the Data Visualisations
+## <a id="data-analysis-visualisation"></a>📈 Data Analysis & Visualisation
+
+### Main Data Analysis Libraries
+* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
 * List your business requirements and a rationale to map them to the Data Visualisations
 ##TODO: ADD TABLE W/ BIZ REQ, RATIONALE AND MAPPED VISUALISATION AND SECTION
 
-## Analysis techniques used
+### Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 
-
-## Generative AI
-Please view the [GEN_AI.md](GEN_AI.md) file.
-
-## Ethical considerations
-Please view the [ETHICS.md](ETHICS.md) file.
-
-## Dashboard Design
+## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
-## Unfixed Bugs
+## <a id="challenges-solutions-future-development"></a>🧩 Challenges, Solutions & Future Developments
+* What challenges did you face, and what strategies were used to overcome these challenges?
+* What new skills or tools do you plan to learn next based on your project experience? 
+
+## <a id="unfixed-bugs"></a>🐞 Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
-## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
 
+## <a id="generative-ai-ethical-considerations"></a>🤖 Generative AI & Ethical Considerations
+Please view the [GEN_AI.md](GEN_AI.md) & [ETHICS.md](ETHICS.md)
 
+## <a id="credits"></a> 🎖️ Credits 
 
-## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
-
-## Credits 
-
-### References 
+## <a id="references "></a> 🔗 References 
 <a id="1">[1]</a> 
 *   Wikipedia Contributors. (2025, January 23). Marine debris. In *Wikipedia, The Free Encyclopedia*. 
 Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marine_debris&oldid=1271267612](https://en.wikipedia.org/w/index.php?title=Marine_debris&oldid=1271267612)
