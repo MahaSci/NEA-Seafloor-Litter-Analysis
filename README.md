@@ -396,6 +396,14 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 
 * [6] International Bottom Trawl Survey Working Group (IBTSWG). (2021). Wing Spread Data Issues in International Surveys. Retrieved from https://literatur.thuenen.de/digbib_extern/dn064116.pdf
 
+* [7] DataCamp. (n.d.). Univariate Investment Risk and Returns: Introduction to Portfolio Risk Management in Python. Retrieved from https://campus.datacamp.com/courses/introduction-to-portfolio-risk-management-in-python/univariate-investment-risk-and-returns?ex=12
+
+* [8] DataCamp. (n.d.). Analyzing Survey Data in Python: Statistical Modeling. Retrieved from https://campus.datacamp.com/courses/analyzing-survey-data-in-python/statistical-modeling?ex=8.
+
+* [9] IBM. (n.d.). Cramér's V Definition. Retrieved from https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=terms-cramrs-v.
+
+
+
 ### Media
 
 - The photos used on the home and sign-up page are from This Open-Source site
