@@ -13,6 +13,7 @@
 | 🧩 [Challenges, Solutions & Future Developments](#challenges-solutions-future-developments) | Challenges faced, solutions provided, and future directions. |
 | 🐞 [Unfixed Bugs](#unfixed-bugs) | List of any unresolved bugs or issues. |
 | 🤖 [Generative AI & Ethical Considerations](#generative-ai-ethical-considerations) | Ethical considerations and use of generative AI. |
+|  [Evaluation](#evaluation) | Evaluation of project. |
 | 🎖️ [Credits](#credits)                     | Acknowledgments and credits.             |
 | 🔗 [References](#references)               | List of references used in the project.  |
 
@@ -261,6 +262,8 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 ### High-Level Steps:
 * Outline the high-level steps taken for the analysis.
 ### Data Cleaning & Preprocessing
+- Explain how data was collected, cleaned, and stored, and how this process was managed. This could be done in the notebook through comments or markdown cells, or in the dashboard through a data management section.
+
 - **Data Import & Inspection:** Loaded `01_RAW_NEA-Seafloor-Litter.csv`, checked structure, and identified issues.
 - **Handling Missing Values:** Applied imputation, removal, or "unknown" categorisation.
 - **Standardisation & Formatting:** Reformatted dates, verified categorical consistency.
@@ -271,8 +274,15 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 ### Data Management:
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
 
+- Provide evidence of effective data management practices, such as using version control systems like Git, documenting code, and storing data in a structured format. The dashboard could include a section on data sources and how data was collected and processed. Learners can show their process in the notebook for handling missing data, normalising values, and storing cleaned data in a structured format.
+
 ### Methodology Justification:
 * Why did you choose the research methodologies you used?
+- 7.2 Select research methodologies applicable to the project goals:
+Explain the research methodologies used in the project, such as data collection, analysis, and interpretation. This could be done in the notebook through a methodology section or in the dashboard through a research methods section. In the notebook, learners should explain why they chose specific methodologies (e.g., experimental, observational) and data analysis techniques for their project goals.
+
+- Future Development Plan: 
+- go to future dev sec
 
 ## <a id="data-analysis-visualisation"></a>📈 Data Analysis & Visualisation
 
@@ -293,10 +303,20 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 * How were data insights communicated to technical and non-technical audiences?
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
+- Articulate complex data insights in the dashboard, using visualisations and narratives to enhance user understanding. The README could include a section on how data insights were communicated to technical and non-technical audiences. The dashboard should include visualisations that are easy to understand and provide clear insights into the data. The README should explain how the dashboard was designed to communicate complex data insights to different audiences. The dashboard should include both technical metrics (e.g., statistical outputs, model accuracy) and simplified summaries or visualisations for a general audience.
+
+- Employ visualisations and narratives in the dashboard to enhance user understanding. The notebook could include markdown on how visualisations were chosen and designed to communicate data insights. Learners can use visual tools like Matplotlib, Plotly, or Seaborn to visualise data in the notebook and ensure the dashboard includes clear charts and infographics.
+
+- The dashboard should include a clear narrative that guides the audience through the data story, explaining key insights and findings.
+
 ## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
 
 ### Challenges & Solutions
 What challenges did you face, and what strategies were used to overcome these challenges?
+
+-10.2 Reflect on the practical challenges and considerations in executing the project: 
+In the notebook, learners should reflect on challenges like dataset size or deployment issues and discuss potential solutions.
+
 During the development of this project, I encountered a few challenges:
 
 1.  **DataFrame Not Updating:**
@@ -340,6 +360,10 @@ During the development of this project, I encountered a few challenges:
 ### Future Developments
 * What new skills or tools do you plan to learn next based on your project experience? 
 
+- LO10 Develop plans to implement, maintain, update, and evaluate data analytics projects, applying theoretical knowledge to practical scenarios.
+10.1 Construct a complete project plan, including implementation, maintenance, updates, and evaluation phases: 
+Document a project plan outlining steps for data collection, updates, model retraining, and ongoing evaluation. The dashboard can include features for future updates, such as adding new data sources.
+
 
 
 ## <a id="unfixed-bugs"></a>🐞 Unfixed Bugs
@@ -349,7 +373,10 @@ During the development of this project, I encountered a few challenges:
 
 
 ## <a id="generative-ai-ethical-considerations"></a>🤖 Generative AI & Ethical Considerations
-Please view the [GEN_AI.md](GEN_AI.md) & [ETHICS.md](ETHICS.md)
+Please view the [GEN_AI.md](reports/GEN_AI.md) & [ETHICS.md](reports/ETHICS.md)
+
+## <a id="evaluation"></a> Evaluation
+Please view the [EVALUATION.md](reports/Evaluation.md)
 
 ## <a id="credits"></a> 🎖️ Credits 
 
