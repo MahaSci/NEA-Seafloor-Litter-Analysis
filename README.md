@@ -293,9 +293,54 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 * How were data insights communicated to technical and non-technical audiences?
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
-## <a id="challenges-solutions-future-development"></a>🧩 Challenges, Solutions & Future Developments
-* What challenges did you face, and what strategies were used to overcome these challenges?
+## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
+
+### Challenges & Solutions
+What challenges did you face, and what strategies were used to overcome these challenges?
+During the development of this project, I encountered a few challenges:
+
+1.  **DataFrame Not Updating:**
+    * Initially, I noticed that the DataFrame (`df`) was not being updated as expected after performing certain operations.
+    * I remembered that in Pandas, many DataFrame operations return a new DataFrame rather than modifying the original one in place.
+    * To fix this, I made sure to reassign the result of each operation back to the `df` variable (e.g., `df = df.dropna()`).
+
+<br>
+
+2.  **Imputation Function and Missing Values:**
+    * After applying the imputation function (to fill in missing sea names), the function to check for missing values still showed 277 missing areas.
+    * <img src="images/07_missing_areas.png" alt="Missing Areas After Imputation" width="600" style="border: 2px solid black;">
+
+    * This was because I forgot to reassign the DataFrame after the imputation.
+    * <img src="images/08_reassigning_df.png" alt="Reassigning DataFrame" width="600" style="border: 2px solid black;">
+    * Reassigning `raw_df` to `find_sea_by_station_and_impute(raw_df)` fixed this issue.
+
+<br>
+
+3.  **Long Output from Imputation Function:**
+    * The initial output from the imputation function was very long (277 lines) and contained a messy list of associated seas.
+    * <img src="images/09_initial_output.png" alt="Initial Long Output" width="600" style="border: 2px solid black;">
+    * To make it easier to understand, I used ChatGPT to summarise the output.
+
+    * First, I changed the output to just print the seas that were associated with each station.
+    * <img src="images/10_altered_output.png" alt="Altered Output" width="600" style="border: 2px solid black;">
+    * Then, I asked it to provide a summary of the number of imputations for each category (stations with one associated area, multiple areas, or unknown).
+
+    * The final output showed the initial 277 missing values, a summary of the imputations (e.g., "X stations had a single area imputed"), and then 0 missing values after imputation.
+    * <img src="images/11_final_output.png" alt="Final Output Summary" width="600" style="border: 2px solid black;">
+    * This made the output much more manageable and easier to review.
+<br>
+
+4.  **Date Parsing Error:**
+    * I encountered a date parsing error because the date format was not being correctly interpreted.
+    * <img src="images/12_date_parsing.png" alt="Date Parsing Error" width="600" style="border: 2px solid black;">
+    * I fixed this by adding `dayfirst=True` to the `pd.to_datetime()` function, as recommended by the error message.
+
+
+
+### Future Developments
 * What new skills or tools do you plan to learn next based on your project experience? 
+
+
 
 ## <a id="unfixed-bugs"></a>🐞 Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
