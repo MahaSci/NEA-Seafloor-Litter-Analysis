@@ -394,6 +394,7 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 <a id="5">[5]</a> 
 *   Global Fishing Watch. (2025). Retrieved from [https://globalfishingwatch.org/](https://globalfishingwatch.org/)
 
+* [6] International Bottom Trawl Survey Working Group (IBTSWG). (2021). Wing Spread Data Issues in International Surveys. Retrieved from https://literatur.thuenen.de/digbib_extern/dn064116.pdf
 
 ### Media
 
