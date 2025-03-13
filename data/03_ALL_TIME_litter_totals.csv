@@ -1,2 +1,8 @@
-Plastic,Metal,Rubber,Glass,Plant-Based Materials,Clothing & Fabrics,Miscellaneous
-7988,502,563,99,710,457,239
+category,count
+Plastic,7988
+Metal,502
+Rubber,563
+Glass,99
+Plant-Based Materials,710
+Clothing & Fabrics,457
+Miscellaneous,239
