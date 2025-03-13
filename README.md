@@ -402,7 +402,7 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 
 * [9] IBM. (n.d.). Cramér's V Definition. Retrieved from https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=terms-cramrs-v.
 
-
+* [10] Plotly Community. (n.d.). Plotly Express Scatter Matrix: Hide Upper Half and Diagonal. Retrieved from https://community.plotly.com/t/plotly-express-scatter-matrix-hide-upper-half-and-diagonal/69812
 
 ### Media
 
