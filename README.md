@@ -1,5 +1,5 @@
 # North East Atlantic Seafloor Litter Analysis
-![Image of a deceased fish trapped inside a plastic glove.](images/01_debris_in_sea.gif)
+![Gif of litter in the sea.](images/01_debris_in_sea.gif)
 ## 📖 Table of Contents  
 | **Section**                             | **Description**                          |
 |-----------------------------------------|------------------------------------------|
