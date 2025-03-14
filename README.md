@@ -140,9 +140,10 @@ The dataset includes a wide range of attributes related to seafloor litter, with
 ### Counts, Trawl Distance & Wing Spread
 - **Total Litter**: Total amount of litter identified during the survey
 - **Distance Trawled**: The distance covered during the trawling process
-- **Wing Spread**: The spread of the trawl during data collection
+- **Wing Spread**: The length of the net opening (in metres)
 
-This rich dataset provides a comprehensive view of marine pollution over an extensive period, offering insights into the types, distribution, and concentration of marine litter across the North East Atlantic.
+<br>
+<img src="images/13_wingspread_diagram.jpg" alt="diagram of trawl net with labels for various components of the net" width="50%"><br>
 
 ### Additional Data:
 - In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and  its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
