@@ -47,6 +47,10 @@ Generative AI tools, including OpenAI's GPT models and GitHub Copilot, were used
     * Output:
         * <img src="images/03_hypotheses_AI.png" alt="AI Output" width="70%"><br>
 
+* **Insights into Visualisations**
+    * AI helped identify suitable chart types for different data variables. For example, it suggested bar charts for comparing categories (like litter types) and line charts for showing trends over time (like seasonal variations).
+    * AI offered domain knowledge related to marine litter, providing context for the data. This included suggesting possible reasons for observed trends, such as increased tourism or fishing activity affecting litter levels.
+
 ### Design Thinking
 
 * AI assisted in the dashboard design process by suggesting helpful charts and graphs for stakeholders.
@@ -55,7 +59,8 @@ Generative AI tools, including OpenAI's GPT models and GitHub Copilot, were used
 
 ## Ethical Review of AI Use
 
-* All AI-generated outputs were validated and verified to ensure accuracy and transparency.
+* I clearly stated in my report that AI was used to assist in auto-completing functions, creating the folium maps and providing insights on visualisations that were used.
+*I documented the prompts I gave to the AI, so everyone can understand how the AI's responses were generated.
 
 ## Benefits and Limitations
 
