@@ -193,7 +193,10 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 - **Alternative Hypothesis (H₁):** The amount of plastic litter is increasing over time.
 - **Null Hypothesis (H₀):** The amount of plastic litter is not increasing over time.
 - **Rationale:**  
-  Studies and environmental reports suggest that plastic pollution has been rising over the years due to increased plastic production and inadequate waste management. This hypothesis aims to confirm whether the trend holds in the dataset over time.
+Studies and environmental reports suggest that plastic pollution has been rising over the years due to increased plastic production and inadequate waste management. This hypothesis aims to confirm whether the trend holds in the dataset over time.
+
+Hannah Ritchie, Veronika Samborska, and Max Roser (2023) state that "Plastic production has sharply increased over the last 70 years. In 1950, the world produced just two million tonnes. It now produces over 450 million tonnes" (Our World in Data). This sharp rise in production suggests a likely increase in plastic pollution, which this analysis seeks to validate.
+
 - **Exploratory Data Analysis (EDA) Approach:**  
   - Bar chart of plastic across years. 
   - Moving average plot.
@@ -404,6 +407,9 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 * [9] IBM. (n.d.). Cramér's V Definition. Retrieved from https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=terms-cramrs-v.
 
 * [10] Plotly Community. (n.d.). Plotly Express Scatter Matrix: Hide Upper Half and Diagonal. Retrieved from https://community.plotly.com/t/plotly-express-scatter-matrix-hide-upper-half-and-diagonal/69812
+
+* [11] H. Ritchie, V. Samborska, and M. Roser. (2023). Plastic Pollution. Published online at OurWorldinData.org. Retrieved from https://ourworldindata.org/plastic-pollution
+
 
 ### Media
 
