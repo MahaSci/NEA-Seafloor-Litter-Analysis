@@ -189,17 +189,17 @@ Organisations focused on monitoring, protecting, and managing the environment. T
 - **Public & media** – Understand marine pollution trends through accessible insights  
 
 ## <a id="hypotheses-and-validation"></a>🔎 Hypotheses and Validation
-### Hypothesis 1: Plastic is the highest category of litter  
-- **Alternative Hypothesis (H₁):** Plastic is the highest category of litter.  
-- **Null Hypothesis (H₀):** The plastic category is not the highest category of litter.  
+### Hypothesis 1: Plastic is increasing over time
+- **Alternative Hypothesis (H₁):** The amount of plastic litter is increasing over time.
+- **Null Hypothesis (H₀):** The amount of plastic litter is not increasing over time.
 - **Rationale:**  
-  Plastic waste often makes up a large portion of marine pollution, based on existing studies and real-world observations. The hypothesis is that plastic is the dominant form of waste in the dataset.  
+  Studies and environmental reports suggest that plastic pollution has been rising over the years due to increased plastic production and inadequate waste management. This hypothesis aims to confirm whether the trend holds in the dataset over time.
 - **Exploratory Data Analysis (EDA) Approach:**  
-  - Polar chart  
-  - Histogram of categories over time  
-  - Line chart comparing plastic vs. other materials  
+  - Bar chart of plastic across years. 
+  - Moving average plot.
 - **Validation Method:**  
-  - Chi-Square test to compare observed vs. expected category distributions  
+  - Linear regression – To test if the slope of plastic litter over time is significantly positive.
+  Mann-Kendall trend test – To detect whether there is a consistent upward trend in plastic litter over time.
 
 ---
 
