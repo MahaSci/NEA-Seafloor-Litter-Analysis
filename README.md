@@ -235,17 +235,18 @@ Hannah Ritchie, Veronika Samborska, and Max Roser (2023) state that "Plastic pro
 
 ---
 
-### Hypothesis 4: Coastal areas with higher fishing activity have higher amounts of fishing-related debris (2012-2015)  
-- **Alternative Hypothesis (H₁):** Coastal areas with higher fishing activity have higher amounts of fishing-related debris.  
-- **Null Hypothesis (H₀):** Coastal areas with higher fishing activity do not have higher amounts of fishing-related debris.  
+### Hypothesis 4: The proportion of fishing-related debris relative to other types of debris has increased over time, suggesting an increasing contribution from fishing activity.
+- **Alternative Hypothesis (H₁):** The trend in fishing-related debris is significantly different from the trend in other types of debris over time.
+- **Null Hypothesis (H₀):** The trend in fishing-related debris is not significantly different from the trend in other types of debris over time.
 - **Rationale:**  
-  The fishing industry contributes significantly to marine debris, especially plastics and fishing gear (nets, ropes, etc.). This hypothesis tests whether higher fishing activity correlates with more debris.  
+  The fishing industry contributes significantly to marine debris, especially plastics and fishing gear (nets, ropes, etc.). While it is known that marine debris originates from various sources (e.g., shipping, recreational activities, land-based pollution), identifying whether fishing activity contributes disproportionately to debris accumulation would help clarify the extent of its impact.  
 - **EDA Approach:**  
-  - Heatmap of only fishing-related goods  
-  - Overlay with fishing activity data  
+  - Mapping of only fishing-related debris  
+  - Comparison with global fishing watch activity data  
+  - Line chart to compare fishing debris to other litter types.
 - **Validation Method:**  
-  - **For 2012-2015:** Fishing effort data can be confidently compared with marine debris data from the same period.  
-  - **For 1992-2011:** While direct comparison with fishing data is not possible, debris trends over time can still be analysed. It is possible to hypothesise that earlier fishing efforts might have had similar patterns to the 2012-2015 period, depending on historical context.  
+  - Linear regression
+  - Mann-Kendall 
 
 ---
 ## <a id="project-plan-methodology"></a>🧭 Project Plan & Methodology
