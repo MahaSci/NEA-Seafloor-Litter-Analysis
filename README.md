@@ -235,20 +235,7 @@ Hannah Ritchie, Veronika Samborska, and Max Roser (2023) state that "Plastic pro
 
 ---
 
-### Hypothesis 4: There is a seasonal variation in the types of litter found (e.g., more plastic in summer months)  
-- **Alternative Hypothesis (H₁):** There is a seasonal variation in the types of litter found.  
-- **Null Hypothesis (H₀):** There is no seasonal variation in the types of litter found across different months of the year.  
-- **Rationale:**  
-  Seasonal variations in weather, human activity, and maritime traffic could influence the types of litter found.  
-- **EDA Approach:**  
-  - Bar chart of total litter across months, then grouped into seasons  
-  - Breakdown of litter categories by season  
-- **Validation Method:**  
-  - **ANOVA** test to check for significant seasonal variation  
-
----
-
-### Hypothesis 5: Coastal areas with higher fishing activity have higher amounts of fishing-related debris (2012-2015)  
+### Hypothesis 4: Coastal areas with higher fishing activity have higher amounts of fishing-related debris (2012-2015)  
 - **Alternative Hypothesis (H₁):** Coastal areas with higher fishing activity have higher amounts of fishing-related debris.  
 - **Null Hypothesis (H₀):** Coastal areas with higher fishing activity do not have higher amounts of fishing-related debris.  
 - **Rationale:**  
