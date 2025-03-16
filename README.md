@@ -14,7 +14,6 @@
 | 🐞 [Unfixed Bugs](#unfixed-bugs) | List of any unresolved bugs or issues. |
 | 🤖 [Generative AI & Ethical Considerations](#generative-ai-ethical-considerations) | Ethical considerations and use of generative AI. |
 |  [Evaluation](#evaluation) | Evaluation of project. |
-| 🎖️ [Credits](#credits)                     | Acknowledgments and credits.             |
 | 🔗 [References](#references)               | List of references used in the project.  |
 
 
@@ -38,7 +37,7 @@ The accumulation of non-organic waste in the seas leads to the pollution of our 
 
 ## <a id="dataset"></a>📊 Dataset
 
-The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2014. [[4]](#4)
+The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2015. [[4]](#4)
 
 These surveys include:
 
@@ -161,7 +160,7 @@ The business requirements focus on identifying pollution hotspots, trends in lit
 ### Project Constraints
 - Geographical Limitation: The analysis is limited to the North East Atlantic region, as per the available Cefas survey data. Data from other regions or outside the Cefas dataset will not be included, with the sole exception of Global Fishing Watch data for additional context.
 
-- Temporal Scope: The dataset spans from 1992 to 2014, and any changes to the scope of this period will require additional data sources.
+- Temporal Scope: The dataset spans from 1992 to 2015, and any changes to the scope of this period will require additional data sources.
 
 - Data Quality: The quality and consistency of data across different surveys and years may vary, which could affect the reliability of the analysis. Any gaps in the data will be addressed through interpolation or estimation where necessary.
 
@@ -250,44 +249,85 @@ Hannah Ritchie, Veronika Samborska, and Max Roser (2023) state that "Plastic pro
 
 ---
 ## <a id="project-plan-methodology"></a>🧭 Project Plan & Methodology
+### High-Level Steps
+The analysis followed a structured approach, including:
 
-### High-Level Steps:
-* Outline the high-level steps taken for the analysis.
-### Data Cleaning & Preprocessing
-- Explain how data was collected, cleaned, and stored, and how this process was managed. This could be done in the notebook through comments or markdown cells, or in the dashboard through a data management section.
+1. **Data Collection** – The dataset was sourced from CEFAS in CSV format.  
+2. **Data Cleaning & Preprocessing** – Steps included handling missing values, standardising column names, encoding categorical variables, and formatting date-time fields.  
+3. **Exploratory Data Analysis (EDA)** – Conducted descriptive and inferential statistics, including summary statistics, outlier detection, and visualisations.  
+4. **Data Categorisation & Feature Engineering** – Litter items were classified into distinct material categories for better analysis.  
+5. **Data Storage & Export** – The cleaned dataset was saved as `02_PROCESSED_NEA-Seafloor-Litter.csv` for further use.  
+6. **Analysis & Interpretation** – Trends in marine litter composition, geographical distribution, and seasonal variations were analysed.  
 
-- **Data Import & Inspection:** Loaded `01_RAW_NEA-Seafloor-Litter.csv`, checked structure, and identified issues.
-- **Handling Missing Values:** Applied imputation, removal, or "unknown" categorisation.
-- **Standardisation & Formatting:** Reformatted dates, verified categorical consistency.
-- **Filtering & Structuring:** Removed redundant records and prepared data for analysis.
-- **Feature Engineering:** Created derived variables and normalised where necessary.
-- **Output:** Saved cleaned data as `02_PROCESSED_NEA-Seafloor-Litter.csv`.
+---
 
-### Data Management:
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
+### Data Management
+The project employed several best practices for data management:
 
-- Provide evidence of effective data management practices, such as using version control systems like Git, documenting code, and storing data in a structured format. The dashboard could include a section on data sources and how data was collected and processed. Learners can show their process in the notebook for handling missing data, normalising values, and storing cleaned data in a structured format.
+- **Version Control:** GitHub was used to track changes and maintain version control.  
+- **Data Storage:** Raw and processed data were saved in structured CSV formats (`01_RAW_NEA-Seafloor-Litter.csv` and `02_PROCESSED_NEA-Seafloor-Litter.csv`).  
+- **Documentation:** The process was well-documented within Jupyter notebooks, including comments and function explanations.  
+- **Handling Missing Data:** Missing values were identified and either imputed based on logical criteria or filled with placeholders (e.g., "Unknown").  
+- **Normalisation & Structuring:** Data types were standardised (e.g., converting date fields to datetime format), and redundant fields were removed to ensure consistency.  
 
-### Methodology Justification:
-* Why did you choose the research methodologies you used?
-- 7.2 Select research methodologies applicable to the project goals:
-Explain the research methodologies used in the project, such as data collection, analysis, and interpretation. This could be done in the notebook through a methodology section or in the dashboard through a research methods section. In the notebook, learners should explain why they chose specific methodologies (e.g., experimental, observational) and data analysis techniques for their project goals.
+---
 
-- Future Development Plan: 
-- go to future dev sec
+### Methodology Justification
+The chosen methodologies aligned with the project goals in the following ways:
+
+- **Data Collection Methodology:**  
+  - CSV files were used as the primary data source, considering the historical nature of the data.  
+  - The choice of CSV ensured easier data access and processing compared to API-based retrieval.  
+
+- **Data Cleaning & Preprocessing:**  
+  - Standard preprocessing steps (removing duplicates, handling missing values, encoding categorical variables) were applied to improve data quality.  
+  - Outlier detection ensured anomalies did not distort analysis results.  
+
+- **Data Analysis Techniques:**  
+  - **Descriptive Statistics:** Used measures like mean, median, and standard deviation to understand data distributions.  
+  - **Inferential Statistics:** Applied hypothesis testing and probability calculations to validate trends.  
+  - **Visualisation:** Utilised histograms, boxplots, and correlation heatmaps to identify key insights.  
+
+- **Why These Methods?**  
+  - The chosen techniques ensured robust data integrity and meaningful insights.  
+  - The combination of exploratory and inferential approaches allowed for both high-level trend identification and in-depth analysis.  
+
 
 ## <a id="data-analysis-visualisation"></a>📈 Data Analysis & Visualisation
 
 ### Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* **Pandas:** Used for data manipulation, cleaning, and preprocessing. For example, `df = pd.read_csv('01_RAW_NEA-Seafloor-Litter.csv')` to load the dataset and `df['Year'] = pd.to_datetime(df['Year'], format='%Y')` to convert the 'Year' column to datetime format.
+* **NumPy:** Utilised for numerical operations, like calculating summary statistics and handling arrays. For example, `np.mean(df['TotalLitter'])` to calculate the mean of the 'TotalLitter' column.
+* **Matplotlib & Seaborn:** Employed for data visualisation, creating charts like bar plots, scatter plots, and heatmaps. For example, `sns.barplot(x='Year', y='TotalLitter', data=df)` to visualise litter trends over time.
+* **SciPy:** Used for statistical tests, such as t-tests and Mann-Whitney U tests. For example, `stats.ttest_ind(df1['TotalLitter'], df2['TotalLitter'])` to compare litter accumulation between two areas.
+* **Statsmodels:** Used for linear regression and time series analysis. For example, `smf.ols('TotalLitter ~ Year', data=df).fit()` to perform linear regression.
+* **Plotly:** Used for interactive visualisations, such as maps and dashboards. For example, `px.scatter_geo(df, lat='Latitude', lon='Longitude', color='TotalLitter')` to create a geographical scatter plot.
 
-* List your business requirements and a rationale to map them to the Data Visualisations
-##TODO: ADD TABLE W/ BIZ REQ, RATIONALE AND MAPPED VISUALISATION AND SECTION
 
 ### Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
+* **Descriptive Statistics:** Summary statistics (mean, median, standard deviation) were used to understand the distribution of litter data.
+* **Inferential Statistics:** Hypothesis testing (t-tests, Mann-Whitney U tests, linear regression, Mann-Kendall trend test) was used to validate hypotheses about litter trends and distributions.
+* **Data Visualisation:** Charts and plots (bar plots, scatter plots, heatmaps, box plots, geographical plots) were used to visualise litter data and identify patterns.
+* **Feature Engineering:** New features were created (e.g., categorising litter types) to facilitate analysis.
+* **Correlation Analysis:** Pearson correlation coefficient was used to identify relationships between variables.
+
+**Limitations and Alternative Approaches:**
+* **Data Quality:** The dataset had missing values and inconsistencies, which required imputation and preprocessing. Alternative approaches could include using more advanced imputation techniques or collecting additional data.
+* **Temporal Scope:** The dataset only spanned from 1992 to 2015, limiting the ability to analyzs recent trends. Alternative approaches could include incorporating more recent data from other sources.
+
+**Data Structure and Justification:**
+* Data was structured into Pandas DataFrames, which allowed for efficient data manipulation and analysis.
+* Data was categorised into litter types and geographical areas to facilitate comparative analysis.
+* Data was aggregated and summarised to identify trends and patterns.
+
+**Data Limitations and Alternative Approaches:**
+* The dataset lacked information on the sources of litter, which limited the ability to identify the causes of pollution. Alternative approaches could include conducting source tracking studies or incorporating data on human activities.
+* The dataset did not include information on the environmental impact of litter, which limited the ability to assess the ecological consequences of pollution. Alternative approaches could include conducting ecological surveys or incorporating data on marine biodiversity.
+
+### Business Requirements and Mapped Visualizations
+
+
+
 
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
@@ -352,15 +392,31 @@ During the development of this project, I encountered a few challenges:
 ### Future Developments
 * What new skills or tools do you plan to learn next based on your project experience? 
 
-- LO10 Develop plans to implement, maintain, update, and evaluate data analytics projects, applying theoretical knowledge to practical scenarios.
-10.1 Construct a complete project plan, including implementation, maintenance, updates, and evaluation phases: 
-Document a project plan outlining steps for data collection, updates, model retraining, and ongoing evaluation. The dashboard can include features for future updates, such as adding new data sources.
-
+* **Data Updates:** Implement a system to regularly update the dataset with new data from CEFAS and other sources.
+* **Model Retraining:** Retrain the models used in the analysis with updated data to improve accuracy and identify new trends.
+* **Dashboard Enhancements:** Add new features to the dashboard, such as interactive maps, more detailed visualisations, and the ability to download data.
+* **Predictive Modeling:** Develop predictive models to forecast future litter accumulation and identify potential hotspots.
+* **Environmental Impact Assessment:** Incorporate data on marine biodiversity and ecosystem health to assess the environmental impact of litter.
+* **Source Tracking:** Conduct source tracking studies to identify the origins of litter and develop targeted interventions.
+* **Integration of Global Fishing Watch Data:** Further integrate the Global Fishing Watch data to better understand the relationship between fishing activity and marine litter.
+* **Deployment:** Deploy the dashboard as a web application for wider accessibility.
+* **Improved User Interface:** Enhance the user interface based on user feedback to improve usability and accessibility.
+* **Advanced statistical methods:** Implement more complex statistical methods, such as spatial statistics, to gain deeper insights into the data.
+* **Machine Learning:** Explore the use of machine learning algorithms to automate the identification of litter types or predict litter accumulation.
+* **Learning new tools:** Learn more about advanced data visualisation tools such as D3.js, or geospatial analysis libraries like GeoPandas.
 
 
 ## <a id="unfixed-bugs"></a>🐞 Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
+* **Spatial Data Accuracy:** The 'Latitude' and 'Longitude' data points were not always precise, leading to minor inaccuracies in geographical visualizations. Improvements could be made by cross-referencing with more accurate spatial databases, but this was not implemented due to resource limitations.
+* **Wing Spread Data Issues:** Wing spread data had some issues, as noted by the International Bottom Trawl Survey Working Group (IBTSWG) . This could lead to some inaccuracies in the analysis relating to the density of litter. Due to the complexity of correcting this data, and the fact that the data was from an official source, this was not changed.
+
+
 * Did you recognise gaps in your knowledge, and how did you address them?
+* **Statistical Analysis:** Prior to the bootcamp, I had limited experience with advanced statistical tests. The lessons taught helped immensely, and I sought external resources such as AI and DataCamp.
+* **Data Visualisation:** I was unfamiliar with some advanced data visualisation techniques, such as creating interactive maps and heatmaps. I addressed this by exploring the documentation and examples of Plotly and other visualisation libraries.
+* **Geospatial analysis:** While I could plot latitude and longitude, more complex analysis such as calculating distances, or area calculations were outside of my current skillset, and would be something I would like to explore in the future.
+* **Correlation analysis:** I initially was unaware how to select the best correlation methods. I learned about Cramér's V and other methods for categorical data. I also learned how to hide the upper half of a scatterplot matrix using Plotly express.
+
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 
@@ -369,8 +425,6 @@ Please view the [GEN_AI.md](reports/GEN_AI.md) & [ETHICS.md](reports/ETHICS.md)
 
 ## <a id="evaluation"></a> Evaluation
 Please view the [EVALUATION.md](reports/Evaluation.md)
-
-## <a id="credits"></a> 🎖️ Credits 
 
 ## <a id="references "></a> 🔗 References 
 <a id="1">[1]</a> 
@@ -397,13 +451,6 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 * [10] Plotly Community. (n.d.). Plotly Express Scatter Matrix: Hide Upper Half and Diagonal. Retrieved from https://community.plotly.com/t/plotly-express-scatter-matrix-hide-upper-half-and-diagonal/69812
 
 * [11] H. Ritchie, V. Samborska, and M. Roser. (2023). Plastic Pollution. Published online at OurWorldinData.org. Retrieved from https://ourworldindata.org/plastic-pollution
-
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
 
 
 ## Acknowledgements (optional)
