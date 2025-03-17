@@ -150,6 +150,9 @@ The dataset includes a wide range of attributes related to seafloor litter, with
 <br>
 <img src="images/13_wingspread_diagram.jpg" alt="diagram of trawl net with labels for various components of the net" width="50%"><br>
 
+-  Benthic trawl diagram - The active region of an otter (GOV) benthic trawl net, from Carrothers (1980)
+
+
 ### Additional Data:
 - In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
 
