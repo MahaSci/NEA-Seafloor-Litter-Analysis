@@ -36,6 +36,9 @@ The accumulation of non-organic waste in the seas leads to the pollution of our 
 
 >According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** [[3]](#3)
 
+### Please Read!
+- For documents related to the dashboard, view the `dashboard` folder.
+- For documents related to the use of AI, ethical issues, evaluation & assessing the environmental impact, view the `reports` folder
 
 ## <a id="dataset"></a>📊 Dataset
 
@@ -337,9 +340,7 @@ The chosen methodologies aligned with the project goals in the following ways:
 
 
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
-For a detailed report on the design process and the role of AI assistance, please check the following file:
-
-[Enhancing Marine Litter Dashboard Design with AI Assistance.pdf](https://github.com/MahaSci/NEA-Seafloor-Litter-Analysis/blob/main/dashboard/Enhancing%20Marine%20Litter%20Dashboard%20Design%20with%20AI%20Assistance.pdf)
+For a detailed report on the design process and the role of AI assistance, please check the following folder : `dashboard`
 ## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
 
 ### Challenges & Solutions
