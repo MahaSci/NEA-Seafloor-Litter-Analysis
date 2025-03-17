@@ -47,7 +47,7 @@ These surveys include, but are not limited to:
 2. **ICES Ground Fish Surveys (Q4SW)**
 3. **Clean Seas Environment Monitoring Programme (CSEMP)**
 
-The dataset follows the classification system defined by Galgani et al. (2013), which provides a comprehensive framework for marine litter monitoring in European seas.
+The dataset follows the classification system defined by Galgani et al. (2013).
 
 **Definition:**  
 Public data – no limitations to public access.  
