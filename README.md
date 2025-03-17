@@ -325,8 +325,13 @@ The chosen methodologies aligned with the project goals in the following ways:
 * The dataset did not include information on the environmental impact of litter, which limited the ability to assess the ecological consequences of pollution. Alternative approaches could include conducting ecological surveys or incorporating data on marine biodiversity.
 
 ### Business Requirements and Mapped Visualisations
-
-
+| Business Requirement          | Visualisation Types                                              |
+|--------------------------------|-----------------------------------------------------------------|
+| **Classify pollution**         | Bar Charts, Stacked Bar Charts, Lollipop Charts, Polar Charts  |
+| **Analyse composition trends** | Histograms, Density Plots (KDE), Pair Plots                    |
+| **Identify hotspots**          | Scatter Plots, Heatmaps                                        |
+| **Assess environmental impact**| Swarm Plots                                                    |
+| **Public awareness**           | Treemaps of litter categories per survey     
 
 
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
@@ -380,26 +385,32 @@ During the development of this project, I encountered a few challenges:
     * I fixed this by adding `dayfirst=True` to the `pd.to_datetime()` function, as recommended by the error message.
 
 
-
 ### Future Developments
 * What new skills or tools do you plan to learn next based on your project experience? 
+#### **Data & Model Updates**  
+- **Regular Updates:** Automate data pulling from CEFAS and other sources.  
+- **Model Retraining:** Periodically update models to improve accuracy and detect new trends.  
+- **Predictive Modelling:** Develop models to forecast litter accumulation and potential hotspots.  
 
-* **Data Updates:** Implement a system to regularly update the dataset with new data from CEFAS and other sources.
-* **Model Retraining:** Retrain the models used in the analysis with updated data to improve accuracy and identify new trends.
-* **Dashboard Enhancements:** Add new features to the dashboard, such as interactive maps, more detailed visualisations, and the ability to download data.
-* **Predictive Modeling:** Develop predictive models to forecast future litter accumulation and identify potential hotspots.
-* **Environmental Impact Assessment:** Incorporate data on marine biodiversity and ecosystem health to assess the environmental impact of litter.
-* **Source Tracking:** Conduct source tracking studies to identify the origins of litter and develop targeted interventions.
-* **Integration of Global Fishing Watch Data:** Further integrate the Global Fishing Watch data to better understand the relationship between fishing activity and marine litter.
-* **Deployment:** Deploy the dashboard as a web application for wider accessibility.
-* **Improved User Interface:** Enhance the user interface based on user feedback to improve usability and accessibility.
-* **Advanced statistical methods:** Implement more complex statistical methods, such as spatial statistics, to gain deeper insights into the data.
-* **Machine Learning:** Explore the use of machine learning algorithms to automate the identification of litter types or predict litter accumulation.
-* **Learning new tools:** Learn more about advanced data visualisation tools such as D3.js, or geospatial analysis libraries like GeoPandas.
+#### **Dashboard Improvements**  
+- **Enhanced Visualisations:** Add more interaction for the debris hotspot map, such as more detailed tooltips to show the types of litter found at each location.  
+- **Data Download:** Enable users to download forecast data for reference in environmental strategy planning.  
+- **User Experience:** Improve UI/UX based on feedback for better accessibility and hold focus groups to gather said feedback. 
+- **Deployment:** Migrate from Tableau Public to Streamlit for a more dynamic dashboard.  
+
+#### **Advanced Analysis**  
+- **Environmental Impact:** Integrate biodiversity and ecosystem health data to have a more holistic view on the impacts of debris on the various marine species.  
+- **Source Tracking:** Conduct studies to trace marine litter origins and guide interventions.  
+- **Fishing Activity Correlation:** Strengthen integration with Global Fishing Watch data.  
+- **Statistical Insights:** Apply spatial statistics for deeper data exploration.  
+- **Machine Learning:** Create an accumulation prediction to put strategies in place to prevent said litter build up.  
+
+#### **Skill Development**  
+- **Data Visualisation Tools:** Explore D3.js and geospatial libraries like GeoPandas.  
 
 
 ## <a id="unfixed-bugs"></a>🐞 Unfixed Bugs
-* **Spatial Data Accuracy:** The 'Latitude' and 'Longitude' data points were not always precise, leading to minor inaccuracies in geographical visualizations. Improvements could be made by cross-referencing with more accurate spatial databases, but this was not implemented due to resource limitations.
+* **Spatial Data Accuracy:** The 'Latitude' and 'Longitude' data points were not always precise, leading to minor inaccuracies in geographical visualisations. Improvements could be made by cross-referencing with more accurate spatial databases, but this was not implemented due to resource limitations.
 * **Wing Spread Data Issues:** Wing spread data had some issues, as noted by the International Bottom Trawl Survey Working Group (IBTSWG) . This could lead to some inaccuracies in the analysis relating to the density of litter. Due to the complexity of correcting this data, and the fact that the data was from an official source, this was not changed.
 
 
