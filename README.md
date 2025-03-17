@@ -17,7 +17,7 @@
 | 🔗 [References](#references)               | List of references used in the project.  |
 
 
-
+You can view the interactive dashboard here: [North East Atlantic Marine Litter Dashboard](https://public.tableau.com/app/profile/maha.hussain/viz/NorthEastAtlanticSeafloorLitterDashboard/Dashboard115)
 
 
 ## <a id="introduction-project-overview"></a> 🎯 Introduction & Project Overview
@@ -324,23 +324,15 @@ The chosen methodologies aligned with the project goals in the following ways:
 * The dataset lacked information on the sources of litter, which limited the ability to identify the causes of pollution. Alternative approaches could include conducting source tracking studies or incorporating data on human activities.
 * The dataset did not include information on the environmental impact of litter, which limited the ability to assess the ecological consequences of pollution. Alternative approaches could include conducting ecological surveys or incorporating data on marine biodiversity.
 
-### Business Requirements and Mapped Visualizations
+### Business Requirements and Mapped Visualisations
 
 
 
 
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+For a detailed report on the design process and the role of AI assistance, please check the following file:
 
-- Articulate complex data insights in the dashboard, using visualisations and narratives to enhance user understanding. The README could include a section on how data insights were communicated to technical and non-technical audiences. The dashboard should include visualisations that are easy to understand and provide clear insights into the data. The README should explain how the dashboard was designed to communicate complex data insights to different audiences. The dashboard should include both technical metrics (e.g., statistical outputs, model accuracy) and simplified summaries or visualisations for a general audience.
-
-- Employ visualisations and narratives in the dashboard to enhance user understanding. The notebook could include markdown on how visualisations were chosen and designed to communicate data insights. Learners can use visual tools like Matplotlib, Plotly, or Seaborn to visualise data in the notebook and ensure the dashboard includes clear charts and infographics.
-
-- The dashboard should include a clear narrative that guides the audience through the data story, explaining key insights and findings.
-
+[Enhancing Marine Litter Dashboard Design with AI Assistance.pdf](https://github.com/MahaSci/NEA-Seafloor-Litter-Analysis/blob/main/reports/Enhancing%20Marine%20Litter%20Dashboard%20Design%20with%20AI%20Assistance.pdf)
 ## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
 
 ### Challenges & Solutions
@@ -416,8 +408,6 @@ During the development of this project, I encountered a few challenges:
 * **Data Visualisation:** I was unfamiliar with some advanced data visualisation techniques, such as creating interactive maps and heatmaps. I addressed this by exploring the documentation and examples of Plotly and other visualisation libraries.
 * **Geospatial analysis:** While I could plot latitude and longitude, more complex analysis such as calculating distances, or area calculations were outside of my current skillset, and would be something I would like to explore in the future.
 * **Correlation analysis:** I initially was unaware how to select the best correlation methods. I learned about Cramér's V and other methods for categorical data. I also learned how to hide the upper half of a scatterplot matrix using Plotly express.
-
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 
 ## <a id="generative-ai-ethical-considerations"></a>🤖 Generative AI & Ethical Considerations
