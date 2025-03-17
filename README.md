@@ -418,7 +418,7 @@ During the development of this project, I encountered a few challenges:
 * **Wing Spread Data Issues:** Wing spread data had some issues, as noted by the International Bottom Trawl Survey Working Group (IBTSWG) . This could lead to some inaccuracies in the analysis relating to the density of litter. Due to the complexity of correcting this data, and the fact that the data was from an official source, this was not changed.
 
 
-* Did you recognise gaps in your knowledge, and how did you address them?
+Did you recognise gaps in your knowledge, and how did you address them?
 * **Statistical Analysis:** Prior to the bootcamp, I had limited experience with advanced statistical tests. The lessons taught helped immensely, and I sought external resources such as AI and DataCamp.
 * **Data Visualisation:** I was unfamiliar with some advanced data visualisation techniques, such as creating interactive maps and heatmaps. I addressed this by exploring the documentation and examples of Plotly and other visualisation libraries.
 * **Geospatial analysis:** While I could plot latitude and longitude, more complex analysis such as calculating distances, or area calculations were outside of my current skillset, and would be something I would like to explore in the future.
