@@ -447,4 +447,4 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 * I'd like to say a big thank you to:
   - Vasi Pavaloi, my facilitator, for all his support and helpful advice throughout this project.
   - Niel McEwen, my subject expert, whose amazing expertise and knowledge made this project possible
-  - Mahnoor Hussain, my  cousin, for her brilliant advice on the interaction design and aesthetics of my dashboard.
+  - Mahnoor Hussain, my cousin, for her brilliant feedback on the interaction design and aesthetics of my dashboard.
