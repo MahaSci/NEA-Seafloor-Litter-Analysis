@@ -19,6 +19,8 @@
 
 You can view the interactive dashboard here: [North East Atlantic Marine Litter Dashboard](https://public.tableau.com/app/profile/maha.hussain/viz/NorthEastAtlanticSeafloorLitterDashboard/Dashboard115)
 
+<img src="dashboard/Final_dashboard.png" alt="Dashboard containing charts pertaining to marine litter through a temporal and spatial lens." width="50%">
+
 
 ## <a id="introduction-project-overview"></a> 🎯 Introduction & Project Overview
 
