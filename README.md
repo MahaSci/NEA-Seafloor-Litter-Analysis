@@ -36,10 +36,11 @@ The accumulation of non-organic waste in the seas leads to the pollution of our 
 
 >According to UNESCO, **"by 2050, the weight of marine plastic waste could surpass the weight of all fish in the ocean if it is not controlled."** [[3]](#3)
 
+--- 
 ### Please Read!
 - For documents related to the dashboard, view the `dashboard` folder.
 - For documents related to the use of AI, ethical issues, evaluation & assessing the environmental impact, view the `reports` folder
-
+---
 ## <a id="dataset"></a>📊 Dataset
 
 The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2015. [[4]](#4)
