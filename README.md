@@ -332,7 +332,7 @@ The chosen methodologies aligned with the project goals in the following ways:
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
 For a detailed report on the design process and the role of AI assistance, please check the following file:
 
-[Enhancing Marine Litter Dashboard Design with AI Assistance.pdf](https://github.com/MahaSci/NEA-Seafloor-Litter-Analysis/blob/main/reports/Enhancing%20Marine%20Litter%20Dashboard%20Design%20with%20AI%20Assistance.pdf)
+[Enhancing Marine Litter Dashboard Design with AI Assistance.pdf](https://github.com/MahaSci/NEA-Seafloor-Litter-Analysis/blob/main/dashboard/Enhancing%20Marine%20Litter%20Dashboard%20Design%20with%20AI%20Assistance.pdf)
 ## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
 
 ### Challenges & Solutions
