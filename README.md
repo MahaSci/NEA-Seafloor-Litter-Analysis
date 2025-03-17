@@ -296,12 +296,12 @@ The chosen methodologies aligned with the project goals in the following ways:
 ## <a id="data-analysis-visualisation"></a>📈 Data Analysis & Visualisation
 
 ### Main Data Analysis Libraries
-* **Pandas:** Used for data manipulation, cleaning, and preprocessing. For example, `df = pd.read_csv('01_RAW_NEA-Seafloor-Litter.csv')` to load the dataset and `df['Year'] = pd.to_datetime(df['Year'], format='%Y')` to convert the 'Year' column to datetime format.
-* **NumPy:** Utilised for numerical operations, like calculating summary statistics and handling arrays. For example, `np.mean(df['TotalLitter'])` to calculate the mean of the 'TotalLitter' column.
-* **Matplotlib & Seaborn:** Employed for data visualisation, creating charts like bar plots, scatter plots, and heatmaps. For example, `sns.barplot(x='Year', y='TotalLitter', data=df)` to visualise litter trends over time.
-* **SciPy:** Used for statistical tests, such as t-tests and Mann-Whitney U tests. For example, `stats.ttest_ind(df1['TotalLitter'], df2['TotalLitter'])` to compare litter accumulation between two areas.
-* **Statsmodels:** Used for linear regression and time series analysis. For example, `smf.ols('TotalLitter ~ Year', data=df).fit()` to perform linear regression.
-* **Plotly:** Used for interactive visualisations, such as maps and dashboards. For example, `px.scatter_geo(df, lat='Latitude', lon='Longitude', color='TotalLitter')` to create a geographical scatter plot.
+* **Pandas:** Used for data manipulation, cleaning, and preprocessing. 
+* **NumPy:** Utilised for numerical operations, like calculating summary statistics and handling arrays. 
+* **Matplotlib & Seaborn:** Employed for data visualisation, creating charts like bar plots, scatter plots, and heatmaps. 
+* **SciPy:** Used for statistical tests, such as t-tests and Mann-Whitney U tests.
+* **Statsmodels:** Used for linear regression and time series analysis. 
+* **Plotly:** Used for interactive visualisations, such as maps and dashboards. 
 
 
 ### Analysis techniques used
