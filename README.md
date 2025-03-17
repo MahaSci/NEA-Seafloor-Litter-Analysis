@@ -344,7 +344,7 @@ The chosen methodologies aligned with the project goals in the following ways:
 
 
 ## <a id="dashboard-design-development"></a> 🖥️  Dashboard Design & Development
-For a detailed report on the design process and the role of AI assistance, please check the following folder : `dashboard`
+For a detailed report on the design process and the role of AI assistance, please check the following folders : `dashboard`, `wireframe`
 ## <a id="challenges-solutions-future-developments"></a>🧩 Challenges, Solutions & Future Developments
 
 ### Challenges & Solutions
