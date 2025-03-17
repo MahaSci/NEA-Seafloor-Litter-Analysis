@@ -39,7 +39,7 @@ The inconsistent spatial data accuracy issues were recognised as unfixed bugs. W
 
 ### Feedback and Improvements
 
-Feedback from peers and instructors - #TODO 
+To improve the usability of my dashboard, I consulted with my cousin, an interaction designer. She suggested implementing an 'F' shaped layout, which she explained is a standard design principle for accommodating the left-to-right reading flow of English-speaking users.
 
 ## Development Roadmap
 
