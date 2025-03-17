@@ -4,7 +4,7 @@
 The project prioritised ethical practices by ensuring transparency in both data sources and analytical methods. This was achieved by clearly documenting the origin of the data (publicly available data from CEFAS) and the methodologies used to process and analyse it. By adhering to ethical principles, such as transparency and integrity, the project ensured that stakeholders could trust the data and its interpretation.
 
 ## Data Privacy
-As the data utilised pertains to marine litter and is publicly available, it does not contain any personally identifiable information. Consequently, data privacy concerns, such as those related to the GDPR, are not applicable to this project. By using non-sensitive public data, we ensured that no individual’s personal data was at risk of being compromised.
+As the data utilised pertains to marine litter and is publicly available, it does not contain any personally identifiable information. Consequently, data privacy concerns, such as those related to the GDPR, are not applicable to this project. By using non-sensitive public data, it ensured that no individual’s personal data was at risk of being compromised.
 
 ## Bias and Fairness
 Potential biases were carefully addressed through a review of the dataset and the analysis processes. I made sure to cross-checked results and insights against the original dataset to ensure accuracy, fairness, and to prevent any unintended distortion of the data. This step was vital in maintaining the integrity of the findings.

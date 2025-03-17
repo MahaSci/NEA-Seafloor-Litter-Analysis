@@ -39,7 +39,7 @@ The accumulation of non-organic waste in the seas leads to the pollution of our 
 
 The dataset used for this analysis is sourced from CEFAS (Centre for Environment, Fisheries, and Aquaculture Science) and includes public data from three significant marine surveys conducted between 1992 and 2015. [[4]](#4)
 
-These surveys include:
+These surveys include, but are not limited to:
 
 1. **International Bottom Trawl Survey (IBTS)**
 2. **ICES Ground Fish Surveys (Q4SW)**
@@ -145,7 +145,7 @@ The dataset includes a wide range of attributes related to seafloor litter, with
 <img src="images/13_wingspread_diagram.jpg" alt="diagram of trawl net with labels for various components of the net" width="50%"><br>
 
 ### Additional Data:
-- In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and  its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
+- In addition to the Cefas data, Global Fishing Watch data will be used to track commercial fishing activity and its potential connection to marine litter. [[5]](#5) This will provide an additional layer of insight into the overlap between fishing activities and pollution hotspots.
 
 ## <a id="business-requirements"></a>💼 Business Requirements
 The business requirements focus on identifying pollution hotspots, trends in litter composition, and evaluating the environmental impact of marine debris.
@@ -342,9 +342,6 @@ For a detailed report on the design process and the role of AI assistance, pleas
 
 ### Challenges & Solutions
 What challenges did you face, and what strategies were used to overcome these challenges?
-
--10.2 Reflect on the practical challenges and considerations in executing the project: 
-In the notebook, learners should reflect on challenges like dataset size or deployment issues and discuss potential solutions.
 
 During the development of this project, I encountered a few challenges:
 
