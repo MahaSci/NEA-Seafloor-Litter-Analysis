@@ -443,5 +443,8 @@ Retrieved March 11, 2025, from [https://en.wikipedia.org/w/index.php?title=Marin
 * [11] H. Ritchie, V. Samborska, and M. Roser. (2023). Plastic Pollution. Published online at OurWorldinData.org. Retrieved from https://ourworldindata.org/plastic-pollution
 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements 
+* I'd like to say a big thank you to:
+  - Vasi Pavaloi, my facilitator, for all his support and helpful advice throughout this project.
+  - Niel McEwen, my subject expert, whose amazing expertise and knowledge made this project possible
+  - Mahnoor Hussain, my  cousin, for her brilliant advice on the interaction design and aesthetics of my dashboard.
